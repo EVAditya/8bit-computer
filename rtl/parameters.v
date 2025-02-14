@@ -1,3 +1,4 @@
+//Global Variables are defined with this syntax, and in code they are used as `OP_NOP and so on. Don't forget the `.
 `define OP_NOP  8'b00_000_000
 `define OP_CALL 8'b00_000_001
 `define OP_RET  8'b00_000_010
