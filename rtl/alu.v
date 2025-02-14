@@ -24,7 +24,7 @@ module alu(
     if (enable) begin
       case (mode)
         `ALU_ADD: {flag_carry, buf_out} = in_a + in_b;
-        `ALU_ADC: {flag_carry, buf_out} = in_a + in_b + flag_carry;
+        `ALU_ADC: {flag_carry, buf_out} = in_a + in_b + flag_carry; \\Add with carry
         `ALU_SUB: {flag_carry, buf_out} = in_a - in_b;
         `ALU_INC: {flag_carry, buf_out} = in_a + 1;
         `ALU_DEC: {flag_carry, buf_out} = in_a - 1;
