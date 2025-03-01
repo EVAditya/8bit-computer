@@ -157,7 +157,7 @@ module cpu(
   wire [2:0] operand1;
   wire [2:0] operand2;
 
-  assign instruction = regi_out;
+  assign instruction = regi_out; //Instruction Register
   assign operand1    = instruction[5:3];
   assign operand2    = instruction[2:0];
   assign next_state  = state == `STATE_NEXT | reset;
