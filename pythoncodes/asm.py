@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 
 import re
 import sys
@@ -49,6 +49,7 @@ reg = {
 
 TEXT, DATA = 0, 1
 MEM_SIZE = 256
+section = 0
 
 mem = [0 for _ in range(MEM_SIZE)]
 cnt = 0
@@ -124,4 +125,4 @@ for i, b in enumerate(mem):
     if str(b).startswith("%"):
         mem[i] = data_addr[b.lstrip("%")]
 
-print ' '.join(['%02x' % int(b) for b in mem])
+print (' '.join(['%02x' % int(b) for b in mem]))
