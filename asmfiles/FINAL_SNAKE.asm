@@ -39,7 +39,7 @@ move_left:
 
 move_right:
     mov A C
-    inc                    ; X = X + 1   19
+    inc                    ; X = X + 1     19
     cmp A MATRIX_SIZE   ;20
     jnc 11              ;21
     ret                 ;22

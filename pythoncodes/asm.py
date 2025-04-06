@@ -52,7 +52,7 @@ MEM_SIZE = 256
 section = 0
 
 mem = [0 for _ in range(MEM_SIZE)]
-cnt = 0
+cnt = 9
 
 labels = {}
 data = {}
@@ -125,5 +125,4 @@ for i, b in enumerate(mem):
     if str(b).startswith("%"):
         mem[i] = data_addr[b.lstrip("%")]
 
-print(' '.join(['%02x' % int(b) for b in mem]))
-print('am i outputting the right thing?')
+print ('\n'.join(['%02x' % int(b) for b in mem]))
