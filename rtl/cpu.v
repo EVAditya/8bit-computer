@@ -84,7 +84,7 @@ module cpu(
 
   wire [7:0] pc_out;
   wire c_co, c_ci, c_j;
-  counter m_pc (
+  counter #(.start(9)) m_pc (
     .clk(c_ci & internal_clk),
     .in(bus),
     .sel_in(c_j),
