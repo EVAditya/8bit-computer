@@ -28,8 +28,8 @@ module alu(
         `ALU_SUB: {flag_carry, buf_out} = in_a - in_b;
         `ALU_INC: {flag_carry, buf_out} = in_a + 1;
         `ALU_DEC: {flag_carry, buf_out} = in_a - 1;
-        `ALU_AND: buf_out = in_a & in_b;
-        `ALU_OR:  buf_out = in_a | in_b;
+        `ALU_AND: buf_out = in_a << 1;
+        `ALU_OR:  buf_out = in_a >> 1;
         `ALU_XOR: buf_out = in_a ^ in_b;
         default:  buf_out = 'hxx;
       endcase

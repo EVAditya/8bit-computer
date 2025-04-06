@@ -26,7 +26,7 @@ make clean && make run
 
 ### Instructions set
 
-#### Data transfert group
+#### Data transfer group
 
 | Instruction   | Description                                                |
 |---------------|------------------------------------------------------------|

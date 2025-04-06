@@ -17,4 +17,4 @@ def memloader(readfile,writefile, start):
 
 
 #Example usage
-memloader('memory.list','copy.list',8)
+memloader('memory.list','copy.list',0)
